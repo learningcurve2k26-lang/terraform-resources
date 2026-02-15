@@ -1,0 +1,33 @@
+# Terraform local
+.terraform
+*.tfstate
+*.tfstate.backup
+*.tfstate.*     # any other state snapshots
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Generated backend or local files
+*.tfvars          # ignore all tfvars by default (use .tfvars.example instead)
+!*.tfvars.example # but allow example files
+
+# Lockfile (keep this committed) - DO NOT ignore .terraform.lock.hcl
+
+# Crash logs and backups
+crash.log
+*.backup
+
+# AWS creds (never commit)
+.aws/
+credentials
+aws_credentials
+aws-credentials-*
+
+# Editor & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+*.iml
